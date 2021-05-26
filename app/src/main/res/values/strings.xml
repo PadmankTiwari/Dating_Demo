@@ -1,0 +1,47 @@
+<resources>
+
+    <!--Error Messages-->
+    <string name="something_went_wrong_error">Something Went Wrong</string>
+    <string name="error_network" translatable="false">A network error has occurred.Please try again.</string>
+    <string name="error_no_internet_connection" translatable="false">No internet found. Check your connection or try again.</string>
+    <string name="error_server" translatable="false">A server error has occurred.Please try again.</string>
+    <string name="error_unknown" translatable="false">An unknown error has occurred.Please try again.</string>
+    <string name="invalid_credential" translatable="false">Invalid Credential</string>
+
+    <string name="not_implemented">Not Yet Implemented</string>
+
+    <!--Fragment Labels-->
+    <string name="splash_fragment">Splash Fragment</string>
+    <string name="otp_fragment">Otp Fragment</string>
+    <string name="verify_fragment">Otp Verify Fragment</string>
+    <string name="homeFragment">Home Fragment</string>
+
+    <!--Bottom Navigation-->
+    <string name="discover">Discover</string>
+    <string name="notes">Notes</string>
+    <string name="matches">Matches</string>
+    <string name="profile">Profile</string>
+
+    <!--Auth Fragment-->
+    <string name="get_otp">Get OTP</string>
+    <string name="enter_your_phone_number">Enter Your \nPhone Number</string>
+    <string name="_91">+91</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="continue_text">Continue</string>
+
+    <!--OTP Fragment-->
+    <string name="otp_text">+91 %1s</string>
+    <string name="enter_the_otp">Enter The\nOTP</string>
+    <string name="enter_otp">OTP</string>
+    <string name="invalid_otp">Invalid OTP</string>
+    <string name="otp_expired">OTP Expired!!!</string>
+    <string name="invalid_mobile_number">Invalid Mobile Number</string>
+
+    <!--Home Fragment-->
+    <string name="personal_messages_to_you">Personal messages to you</string>
+    <string name="tap_to_review_50_notes">Tap to review 50+ notes</string>
+    <string name="interested_in_you">Interested In You</string>
+    <string name="premium_members_can_view_all_their_likes_at_once">Premium members can\nview all their likes at once</string>
+    <string name="upgrade">Upgrade</string>
+
+</resources>

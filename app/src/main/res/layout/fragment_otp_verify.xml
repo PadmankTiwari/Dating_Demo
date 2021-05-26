@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="otpVerifyViewModel"
+            type="com.example.aisle.ui.verify.OtpVerifyViewModel" />
+
+        <variable
+            name="clickListener"
+            type="android.view.View.OnClickListener" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvOtpVerifyHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_padding_32dp"
+            android:layout_marginTop="@dimen/margin_padding_64dp"
+            android:drawableRight="@drawable/ic_edit"
+            android:drawableTint="@color/black"
+            android:drawablePadding="@dimen/margin_padding_10dp"
+            android:onClick="@{clickListener}"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvOtpVerifyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_padding_8dp"
+            android:text="@string/enter_the_otp"
+            android:textAppearance="?attr/textAppearanceHeadline4"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@id/tvOtpVerifyHeading"
+            app:layout_constraintTop_toBottomOf="@id/tvOtpVerifyHeading" />
+
+        <EditText
+            android:id="@+id/tvOtp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_padding_8dp"
+            android:background="@drawable/drawable_outline"
+            android:inputType="phone"
+            android:paddingHorizontal="@dimen/margin_padding_18dp"
+            android:paddingVertical="@dimen/margin_padding_8dp"
+            android:text="@={otpVerifyViewModel.otp}"
+            android:hint="@string/enter_otp"
+            android:maxLength="4"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/tvOtpVerifyText"
+            app:layout_constraintTop_toBottomOf="@id/tvOtpVerifyText" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnContinue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/margin_padding_18dp"
+            android:background="@drawable/ic_yellow_round"
+            android:onClick="@{clickListener}"
+            android:paddingHorizontal="@dimen/margin_padding_18dp"
+            android:text="@string/continue_text"
+            android:textAppearance="?attr/textAppearanceHeadline6"
+            android:textColor="@color/black"
+            app:backgroundTint="@color/yellow"
+            app:layout_constraintStart_toStartOf="@id/tvOtp"
+            app:layout_constraintTop_toBottomOf="@id/tvOtp" />
+
+        <TextView
+            android:id="@+id/tvTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/margin_padding_4dp"
+            android:layout_marginHorizontal="@dimen/margin_padding_18dp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/btnContinue"
+            app:layout_constraintTop_toTopOf="@id/btnContinue"
+            app:layout_constraintBottom_toBottomOf="@id/btnContinue"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

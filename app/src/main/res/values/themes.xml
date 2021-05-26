@@ -1,0 +1,37 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.AisleDemo" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryVariant">@color/primaryVariant</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/white</item>
+        <item name="colorSecondaryVariant">@color/secondaryVariant</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@android:color/transparent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <!-- Customize your theme here. -->
+        <item name="textInputStyle">@style/Widget.AisleDemo.TextInputLayout</item>
+
+        <!--Typography-->
+        <item name="textAppearanceHeadline1">@style/TextAppearance.AisleDemo.Headline1</item>
+        <item name="textAppearanceHeadline2">@style/TextAppearance.AisleDemo.Headline2</item>
+        <item name="textAppearanceHeadline3">@style/TextAppearance.AisleDemo.Headline3</item>
+        <item name="textAppearanceHeadline4">@style/TextAppearance.AisleDemo.Headline4</item>
+        <item name="textAppearanceHeadline5">@style/TextAppearance.AisleDemo.Headline5</item>
+        <item name="textAppearanceHeadline6">@style/TextAppearance.AisleDemo.Headline6</item>
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.AisleDemo.Subtitle1</item>
+        <item name="textAppearanceSubtitle2">@style/TextAppearance.AisleDemo.Subtitle2</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.AisleDemo.Body1</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.AisleDemo.Body2</item>
+        <item name="textAppearanceButton">@style/TextAppearance.AisleDemo.Button</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.AisleDemo.Caption</item>
+        <item name="textAppearanceOverline">@style/TextAppearance.AisleDemo.Overline</item>
+    </style>
+
+    <style name="Theme.AisleDemo.Splash" parent="Theme.AisleDemo">
+        <item name="android:windowBackground">@drawable/splash_screen_background</item>
+    </style>
+</resources>

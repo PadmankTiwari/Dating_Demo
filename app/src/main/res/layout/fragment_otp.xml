@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="otpViewModel"
+            type="com.example.aisle.ui.otp.OtpViewModel" />
+
+        <variable
+            name="clickListener"
+            type="android.view.View.OnClickListener" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvOtpHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_padding_32dp"
+            android:layout_marginTop="@dimen/margin_padding_64dp"
+            android:text="@string/get_otp"
+            android:textAppearance="?attr/textAppearanceHeadline5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvOtpText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_padding_8dp"
+            android:text="@string/enter_your_phone_number"
+            android:textAppearance="?attr/textAppearanceHeadline4"
+            app:layout_constraintStart_toStartOf="@id/tvOtpHeading"
+            app:layout_constraintTop_toBottomOf="@id/tvOtpHeading" />
+
+        <TextView
+            android:id="@+id/tvPhoneCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_padding_8dp"
+            android:text="@string/_91"
+            android:paddingVertical="@dimen/margin_padding_8dp"
+            android:paddingHorizontal="@dimen/margin_padding_18dp"
+            android:background="@drawable/drawable_outline"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/tvOtpText"
+            app:layout_constraintTop_toBottomOf="@id/tvOtpText" />
+
+        <EditText
+            android:id="@+id/tvPhoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_padding_8dp"
+            android:text="@={otpViewModel.mobileNumber}"
+            android:inputType="phone"
+            android:paddingVertical="@dimen/margin_padding_8dp"
+            android:paddingHorizontal="@dimen/margin_padding_18dp"
+            android:hint="@string/phone_number"
+            android:background="@drawable/drawable_outline"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/tvPhoneCode"
+            app:layout_constraintTop_toTopOf="@id/tvPhoneCode" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnContinue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/margin_padding_18dp"
+            android:background="@drawable/ic_yellow_round"
+            android:onClick="@{clickListener}"
+            android:paddingHorizontal="@dimen/margin_padding_18dp"
+            android:text="@string/continue_text"
+            android:textAppearance="?attr/textAppearanceHeadline6"
+            android:textColor="@color/black"
+            app:backgroundTint="@color/yellow"
+            app:layout_constraintStart_toStartOf="@id/tvPhoneCode"
+            app:layout_constraintTop_toBottomOf="@id/tvPhoneCode" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Typography-->
+    <style name="TextAppearance.AisleDemo.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/gilroy_extra_bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextAppearance.AisleDemo.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/gilroy_extra_bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextAppearance.AisleDemo.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="fontFamily">@font/gilroy_extra_bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextAppearance.AisleDemo.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="fontFamily">@font/gilroy_semi_bold</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextAppearance.AisleDemo.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/gilroy_semi_bold</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextAppearance.AisleDemo.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/gilroy_semi_bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextAppearance.AisleDemo.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/gilroy_semi_bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextAppearance.AisleDemo.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/gilroy_semi_bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextAppearance.AisleDemo.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/gilroy_semi_bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextAppearance.AisleDemo.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="fontFamily">@font/gilroy_semi_bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextAppearance.AisleDemo.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/gilroy_semi_bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextAppearance.AisleDemo.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/gilroy_semi_bold</item>
+        <item name="android:textColor">#942C2C2C</item>
+    </style>
+
+    <style name="TextAppearance.AisleDemo.Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="fontFamily">@font/gilroy_semi_bold</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">#CC2C2C2C</item>
+    </style>
+
+    <style name="TextAppearance.AisleDemo.Toolbar" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/gilroy_semi_bold</item>
+        <item name="android:fontFamily">@font/gilroy_semi_bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+</resources>
